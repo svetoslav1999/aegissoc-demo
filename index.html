@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AEGIS·SOC — Inteligencia de superficie de ataque</title>
+  <meta name="description" content="Plataforma defensiva de auditoría: grafos de ataque en tiempo real, OSINT y dashboard SOC. Recorrido visual del producto." />
+  <meta property="og:title" content="AEGIS·SOC" />
+  <meta property="og:description" content="Grafos de ataque en tiempo real · OSINT · dashboard SOC." />
+  <meta property="og:image" content="assets/soc-dashboard.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top"><span class="dot"></span> AEGIS·SOC</a>
+      <nav class="nav-links">
+        <a href="#features">Funcionalidades</a>
+        <a href="#preview">Vista</a>
+        <a href="#usecases">Casos de uso</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="https://github.com/svetoslav1999/AegisSOC-showcase" target="_blank" rel="noopener">Ver showcase</a>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <span class="badge">🛡 Plataforma defensiva · uso autorizado</span>
+      <h1>Conoce tu <span class="grad">superficie de ataque</span> antes que un atacante</h1>
+      <p class="lead">Grafos de ataque en tiempo real, inteligencia OSINT y un dashboard estilo SOC que convierte hallazgos dispersos en rutas priorizadas por riesgo.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#preview">Ver el producto</a>
+        <a class="btn btn-ghost" href="#features">Funcionalidades</a>
+      </div>
+      <div class="hero-shot"><img src="assets/soc-dashboard.svg" alt="Dashboard SOC (maqueta)" loading="lazy" /></div>
+      <p class="demo-note">⚠️ Herramienta <strong>defensiva</strong>. Solo para sistemas propios o con autorización escrita. Maquetas sin datos reales.</p>
+    </div>
+  </section>
+
+  <section class="section" id="problem">
+    <div class="container">
+      <h2 class="section-title">El problema que resuelve</h2>
+      <p class="section-sub">Los hallazgos de seguridad llegan dispersos y sin contexto. AegisSOC los unifica en un grafo de ataque con rutas y riesgo, en tiempo real.</p>
+      <div class="cards">
+        <div class="card"><div class="card-ico">🔴</div><h3>Grafo de ataque</h3><p>Rutas y riesgo por nodo, visualización interactiva en vivo.</p></div>
+        <div class="card"><div class="card-ico">🌐</div><h3>OSINT integrado</h3><p>Descubrimiento de superficie expuesta desde fuentes públicas.</p></div>
+        <div class="card"><div class="card-ico">📡</div><h3>Tiempo real</h3><p>Hallazgos en vivo con severidad codificada por color.</p></div>
+        <div class="card"><div class="card-ico">🎯</div><h3>MITRE ATT&CK</h3><p>Tácticas mapeadas para priorizar y comunicar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="features">
+    <div class="container">
+      <h2 class="section-title">Funcionalidades de alto nivel</h2>
+      <div class="feat-grid">
+        <div class="feat"><span>🔴</span><h3>Grafo de ataque en tiempo real</h3><p>Hosts, servicios, vulnerabilidades y relaciones, con rutas y puntuación de riesgo.</p></div>
+        <div class="feat"><span>🌐</span><h3>Inteligencia OSINT</h3><p>Superficie expuesta: correos, infraestructura y certificados.</p></div>
+        <div class="feat"><span>🔎</span><h3>Comprobaciones defensivas</h3><p>Familias de comprobaciones observacionales. Sin payloads.</p></div>
+        <div class="feat"><span>🖥</span><h3>Dashboard SOC</h3><p>Riesgo, severidad, histórico de escaneos y alertas.</p></div>
+        <div class="feat"><span>🗺</span><h3>Mapa de infraestructura</h3><p>Activos expuestos por geolocalización y cadenas de certificados.</p></div>
+        <div class="feat"><span>🔐</span><h3>Control de acceso por rol</h3><p>Administración, auditoría y solo lectura.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="preview">
+    <div class="container">
+      <h2 class="section-title">Vista del producto</h2>
+      <p class="section-sub">Maquetas representativas · sin datos reales.</p>
+      <div class="gallery">
+        <figure class="shot"><img src="assets/soc-dashboard.svg" alt="Dashboard SOC" /><figcaption>Dashboard SOC</figcaption></figure>
+        <figure class="shot"><img src="assets/attack-graph.svg" alt="Grafo de ataque" /><figcaption>Grafo de ataque en tiempo real</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="usecases">
+    <div class="container">
+      <h2 class="section-title">Casos de uso</h2>
+      <div class="cards">
+        <div class="card"><h3>Equipo azul</h3><p>Monitorización continua de la superficie de ataque propia.</p></div>
+        <div class="card"><h3>Auditoría autorizada</h3><p>Evaluación observacional de activos con permiso por escrito.</p></div>
+        <div class="card"><h3>Formación</h3><p>Entorno seguro para entender grafos de ataque y OSINT.</p></div>
+        <div class="card"><h3>Gestión de exposición</h3><p>Descubrir y priorizar activos expuestos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="stack">
+    <div class="container narrow">
+      <h2 class="section-title">Tecnología (alto nivel)</h2>
+      <p class="section-sub">Aplicación web en tiempo real con backend de servicios, motor de escaneo extensible y visualización de grafos.</p>
+      <div class="chips"><span>Web tiempo real</span><span>API de servicios</span><span>Motor extensible</span><span>Grafo interactivo</span><span>OSINT</span><span>MITRE ATT&CK</span></div>
+      <pre class="arch">Analista (SOC)
+   ↓
+Dashboard web (tiempo real)
+   ↓
+API + motor de escaneo
+   ↓
+Hallazgos + grafo</pre>
+      <p class="muted">El detalle de implementación, módulos de escaneo e integraciones se mantiene privado de forma intencionada.</p>
+    </div>
+  </section>
+
+  <section class="section alt" id="roadmap">
+    <div class="container narrow">
+      <h2 class="section-title">Roadmap</h2>
+      <ul class="roadmap">
+        <li>Feed de inteligencia de vulnerabilidades (CVE)</li>
+        <li>Análisis de hallazgos asistido por IA</li>
+        <li>Generación de informes en PDF</li>
+        <li>Descubrimiento de activos por rastreo web</li>
+        <li>Soporte multi-workspace</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <span class="dot big"></span>
+      <h2>¿Quieres ver AEGIS·SOC en acción?</h2>
+      <p>El código fuente es privado. Esta demo muestra el producto sin exponer su implementación.</p>
+      <a class="btn btn-primary" href="https://github.com/svetoslav1999/AegisSOC-showcase" target="_blank" rel="noopener">Ver el showcase en GitHub</a>
+      <p class="copy">Construido para equipos de seguridad · Úsalo de forma responsable y legal</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

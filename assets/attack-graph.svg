@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" font-family="Segoe UI, Inter, sans-serif">
+  <rect width="1000" height="600" fill="#0a0e14"/>
+  <rect width="1000" height="56" fill="#0d1320"/>
+  <circle cx="32" cy="28" r="10" fill="#39d353"/>
+  <text x="52" y="34" fill="#e6edf3" font-size="18" font-weight="700">AEGIS·SOC</text>
+  <text x="440" y="34" fill="#39d353" font-size="13">Attack Graph · live</text>
+  <!-- edges -->
+  <g stroke="#33415c" stroke-width="2">
+    <line x1="200" y1="300" x2="420" y2="180"/>
+    <line x1="200" y1="300" x2="420" y2="300"/>
+    <line x1="200" y1="300" x2="420" y2="420"/>
+    <line x1="420" y1="180" x2="660" y2="140"/>
+    <line x1="420" y1="300" x2="660" y2="300"/>
+    <line x1="420" y1="420" x2="660" y2="460"/>
+    <line x1="660" y1="300" x2="840" y2="240" stroke="#ff2d55" stroke-width="3"/>
+    <line x1="420" y1="300" x2="660" y2="140"/>
+  </g>
+  <!-- nodes -->
+  <g font-size="11" text-anchor="middle">
+    <circle cx="200" cy="300" r="34" fill="#15314f" stroke="#3b82f6" stroke-width="2"/><text x="200" y="304" fill="#cfe0f5">Host</text>
+    <circle cx="420" cy="180" r="28" fill="#1c2b1c" stroke="#39d353" stroke-width="2"/><text x="420" y="184" fill="#bfeccb">Service</text>
+    <circle cx="420" cy="300" r="28" fill="#1c2b1c" stroke="#39d353" stroke-width="2"/><text x="420" y="304" fill="#bfeccb">Port</text>
+    <circle cx="420" cy="420" r="28" fill="#2b261c" stroke="#ffd60a" stroke-width="2"/><text x="420" y="424" fill="#f3e6b0">Cert</text>
+    <circle cx="660" cy="140" r="26" fill="#2b1c1c" stroke="#ff7a18" stroke-width="2"/><text x="660" y="144" fill="#f5cdb0">Vuln</text>
+    <circle cx="660" cy="300" r="26" fill="#2b1c2b" stroke="#a855f7" stroke-width="2"/><text x="660" y="304" fill="#e4c8f5">Email</text>
+    <circle cx="660" cy="460" r="26" fill="#1c2630" stroke="#3b82f6" stroke-width="2"/><text x="660" y="464" fill="#cfe0f5">ASN</text>
+    <circle cx="840" cy="240" r="30" fill="#3a0d18" stroke="#ff2d55" stroke-width="3"/><text x="840" y="237" fill="#ffc2cf">CRIT</text><text x="840" y="251" fill="#ffc2cf">Vuln</text>
+  </g>
+  <!-- attack path callout -->
+  <rect x="720" y="430" width="256" height="120" rx="12" fill="#0f1724" stroke="#ff2d55"/>
+  <text x="740" y="460" fill="#ff2d55" font-size="13" font-weight="700">Attack path · risk 91</text>
+  <text x="740" y="486" fill="#c4cfdc" font-size="11">Host → Port → Vuln → CRITICAL</text>
+  <text x="740" y="508" fill="#7d8da1" font-size="11">MITRE: Initial Access → Exec</text>
+  <text x="740" y="530" fill="#7d8da1" font-size="11">3 hops · exploitable chain</text>
+  <!-- legend -->
+  <rect x="24" y="430" width="220" height="120" rx="12" fill="#0f1724" stroke="#1d2738"/>
+  <text x="44" y="458" fill="#7d8da1" font-size="12">Node types</text>
+  <circle cx="52" cy="482" r="6" fill="#3b82f6"/><text x="66" y="486" fill="#c4cfdc" font-size="11">Host / ASN</text>
+  <circle cx="52" cy="506" r="6" fill="#39d353"/><text x="66" y="510" fill="#c4cfdc" font-size="11">Service / Port</text>
+  <circle cx="52" cy="530" r="6" fill="#ff2d55"/><text x="66" y="534" fill="#c4cfdc" font-size="11">Vulnerability</text>
+</svg>

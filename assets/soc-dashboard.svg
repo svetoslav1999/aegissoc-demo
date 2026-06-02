@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" font-family="Segoe UI, Inter, sans-serif">
+  <rect width="1000" height="600" fill="#0a0e14"/>
+  <rect width="1000" height="56" fill="#0d1320"/>
+  <circle cx="32" cy="28" r="10" fill="#39d353"/>
+  <text x="52" y="34" fill="#e6edf3" font-size="18" font-weight="700">AEGIS·SOC</text>
+  <text x="200" y="34" fill="#7d8da1" font-size="13">Dashboard</text>
+  <text x="300" y="34" fill="#7d8da1" font-size="13">Scans</text>
+  <text x="380" y="34" fill="#7d8da1" font-size="13">Graph</text>
+  <text x="460" y="34" fill="#7d8da1" font-size="13">Intel</text>
+  <!-- risk gauge -->
+  <rect x="24" y="80" width="300" height="220" rx="14" fill="#0f1724" stroke="#1d2738"/>
+  <text x="44" y="112" fill="#7d8da1" font-size="13">Risk score</text>
+  <circle cx="174" cy="200" r="70" fill="none" stroke="#1d2738" stroke-width="14"/>
+  <circle cx="174" cy="200" r="70" fill="none" stroke="#ff7a18" stroke-width="14" stroke-dasharray="330 440" stroke-linecap="round" transform="rotate(-90 174 200)"/>
+  <text x="174" y="205" fill="#e6edf3" font-size="40" font-weight="700" text-anchor="middle">72</text>
+  <text x="174" y="232" fill="#7d8da1" font-size="12" text-anchor="middle">/ 100 · HIGH</text>
+  <!-- severity bars -->
+  <rect x="348" y="80" width="300" height="220" rx="14" fill="#0f1724" stroke="#1d2738"/>
+  <text x="368" y="112" fill="#7d8da1" font-size="13">Findings by severity</text>
+  <g font-size="12" fill="#c4cfdc">
+    <text x="368" y="148">Critical</text><rect x="440" y="138" width="60" height="12" rx="3" fill="#ff2d55"/><text x="510" y="148">3</text>
+    <text x="368" y="178">High</text><rect x="440" y="168" width="120" height="12" rx="3" fill="#ff7a18"/><text x="570" y="178">9</text>
+    <text x="368" y="208">Medium</text><rect x="440" y="198" width="180" height="12" rx="3" fill="#ffd60a"/><text x="630" y="208">14</text>
+    <text x="368" y="238">Low</text><rect x="440" y="228" width="90" height="12" rx="3" fill="#39d353"/><text x="540" y="238">7</text>
+    <text x="368" y="268">Info</text><rect x="440" y="258" width="150" height="12" rx="3" fill="#3b82f6"/><text x="600" y="268">11</text>
+  </g>
+  <!-- OSINT widgets -->
+  <rect x="672" y="80" width="304" height="105" rx="14" fill="#0f1724" stroke="#1d2738"/>
+  <text x="692" y="112" fill="#7d8da1" font-size="13">Exposed assets (OSINT)</text>
+  <text x="692" y="150" fill="#e6edf3" font-size="28" font-weight="700">18</text><text x="692" y="170" fill="#7d8da1" font-size="11">hosts</text>
+  <text x="800" y="150" fill="#e6edf3" font-size="28" font-weight="700">42</text><text x="800" y="170" fill="#7d8da1" font-size="11">certificates</text>
+  <rect x="672" y="195" width="304" height="105" rx="14" fill="#0f1724" stroke="#1d2738"/>
+  <text x="692" y="227" fill="#7d8da1" font-size="13">Scan history</text>
+  <text x="692" y="258" fill="#c4cfdc" font-size="12">example.com · 24 findings · 1m 12s</text>
+  <text x="692" y="280" fill="#c4cfdc" font-size="12">scanme.nmap.org · 8 findings · 0m 41s</text>
+  <!-- live terminal -->
+  <rect x="24" y="320" width="952" height="256" rx="14" fill="#080b11" stroke="#1d2738"/>
+  <text x="44" y="352" fill="#39d353" font-size="13" font-family="monospace">● live findings</text>
+  <g font-family="monospace" font-size="12.5">
+    <text x="44" y="384" fill="#7d8da1">[12:04:01] <tspan fill="#3b82f6">headers</tspan>   probing security headers…</text>
+    <text x="44" y="408" fill="#7d8da1">[12:04:02] <tspan fill="#ff7a18">HIGH</tspan>     Missing Strict-Transport-Security</text>
+    <text x="44" y="432" fill="#7d8da1">[12:04:03] <tspan fill="#3b82f6">tls</tspan>       certificate valid · TLS 1.3</text>
+    <text x="44" y="456" fill="#7d8da1">[12:04:05] <tspan fill="#ffd60a">MEDIUM</tspan>   CORS allows wildcard origin</text>
+    <text x="44" y="480" fill="#7d8da1">[12:04:06] <tspan fill="#ff2d55">CRITICAL</tspan> Hardcoded token in JS bundle</text>
+    <text x="44" y="504" fill="#7d8da1">[12:04:08] <tspan fill="#3b82f6">osint</tspan>     SPF + DMARC present · 3 subdomains</text>
+    <text x="44" y="528" fill="#7d8da1">[12:04:10] <tspan fill="#39d353">done</tspan>      risk scored · graph updated</text>
+  </g>
+</svg>
