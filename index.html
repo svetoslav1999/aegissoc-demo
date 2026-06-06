@@ -7,7 +7,7 @@
   <meta name="description" content="Plataforma defensiva de auditoría: grafos de ataque en tiempo real, análisis de URLs phishing, OSINT y dashboard SOC. Recorrido visual del producto." />
   <meta property="og:title" content="AEGIS·SOC" />
   <meta property="og:description" content="Grafos de ataque en tiempo real · Analizador de amenazas URL · OSINT · dashboard SOC." />
-  <meta property="og:image" content="assets/soc-dashboard.svg" />
+  <meta property="og:image" content="assets/dashboard.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -35,8 +35,8 @@
         <a class="btn btn-primary" href="#preview">Ver el producto</a>
         <a class="btn btn-ghost" href="#features">Funcionalidades</a>
       </div>
-      <div class="hero-shot"><img src="assets/soc-dashboard.svg" alt="Dashboard SOC (maqueta)" loading="lazy" /></div>
-      <p class="demo-note">⚠️ Herramienta <strong>defensiva</strong>. Solo para sistemas propios o con autorización escrita. Maquetas sin datos reales.</p>
+      <div class="hero-shot"><img src="assets/dashboard.png" alt="Dashboard SOC" loading="lazy" /></div>
+      <p class="demo-note">⚠️ Herramienta <strong>defensiva</strong>. Solo para sistemas propios o con autorización escrita. Capturas reales sin datos de producción.</p>
     </div>
   </section>
 
@@ -91,11 +91,79 @@
 
   <section class="section alt" id="preview">
     <div class="container">
-      <h2 class="section-title">Vista del producto</h2>
-      <p class="section-sub">Maquetas representativas · sin datos reales.</p>
-      <div class="gallery">
-        <figure class="shot"><img src="assets/soc-dashboard.svg" alt="Dashboard SOC" /><figcaption>Dashboard SOC</figcaption></figure>
-        <figure class="shot"><img src="assets/attack-graph.svg" alt="Grafo de ataque" /><figcaption>Grafo de ataque en tiempo real</figcaption></figure>
+      <h2 class="section-title">Capturas reales del producto</h2>
+      <p class="section-sub">Capturas generadas automáticamente desde la aplicación en ejecución · sin datos de producción.</p>
+      <div class="gallery-grid">
+        <figure class="shot-card featured">
+          <img src="assets/dashboard.png" alt="Dashboard SOC" loading="lazy" />
+          <figcaption>
+            <span class="shot-label">Dashboard SOC</span>
+            <span class="shot-desc">Métricas de riesgo, escaneos recientes y alertas en tiempo real</span>
+          </figcaption>
+        </figure>
+        <figure class="shot-card featured">
+          <img src="assets/attack-graph.png" alt="Grafo de ataque" loading="lazy" />
+          <figcaption>
+            <span class="shot-label">Grafo de ataque en tiempo real</span>
+            <span class="shot-desc">Hosts, servicios y rutas de ataque con puntuación de riesgo</span>
+          </figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="assets/threat-analyzer-result.png" alt="Analizador de amenazas URL" loading="lazy" />
+          <figcaption>
+            <span class="shot-label">Analizador de amenazas URL</span>
+            <span class="shot-desc">Puntuación 0–100, sub-scores y técnicas MITRE ATT&CK</span>
+          </figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="assets/intel.png" alt="Inteligencia OSINT" loading="lazy" />
+          <figcaption>
+            <span class="shot-label">Inteligencia OSINT</span>
+            <span class="shot-desc">Hunter.io, Censys, correos, empleados y certificados</span>
+          </figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="assets/scan-live.png" alt="Escaneo en vivo" loading="lazy" />
+          <figcaption>
+            <span class="shot-label">Terminal de escaneo en vivo</span>
+            <span class="shot-desc">Hallazgos en tiempo real vía WebSocket con severidad codificada</span>
+          </figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="assets/intel-map.png" alt="Mapa de infraestructura" loading="lazy" />
+          <figcaption>
+            <span class="shot-label">Mapa de infraestructura mundial</span>
+            <span class="shot-desc">Geolocalización de activos expuestos por IP y ASN</span>
+          </figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="assets/scan-findings.png" alt="Hallazgos del escaneo" loading="lazy" />
+          <figcaption>
+            <span class="shot-label">Hallazgos del escaneo</span>
+            <span class="shot-desc">Resultados clasificados por severidad con recomendaciones</span>
+          </figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="assets/scans.png" alt="Lista de escaneos" loading="lazy" />
+          <figcaption>
+            <span class="shot-label">Historial de escaneos</span>
+            <span class="shot-desc">Todos los escaneos con estado, objetivo y puntuación</span>
+          </figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="assets/threat-analyzer.png" alt="Analizador URL" loading="lazy" />
+          <figcaption>
+            <span class="shot-label">Formulario de análisis URL</span>
+            <span class="shot-desc">Interfaz de entrada con historial de análisis anteriores</span>
+          </figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="assets/admin.png" alt="Panel de administración" loading="lazy" />
+          <figcaption>
+            <span class="shot-label">Panel de administración</span>
+            <span class="shot-desc">Gestión de usuarios, roles y configuración de la plataforma</span>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
