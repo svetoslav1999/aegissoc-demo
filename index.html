@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AEGIS·SOC — Inteligencia de superficie de ataque</title>
-  <meta name="description" content="Plataforma defensiva de auditoría: grafos de ataque en tiempo real, OSINT y dashboard SOC. Recorrido visual del producto." />
+  <meta name="description" content="Plataforma defensiva de auditoría: grafos de ataque en tiempo real, análisis de URLs phishing, OSINT y dashboard SOC. Recorrido visual del producto." />
   <meta property="og:title" content="AEGIS·SOC" />
-  <meta property="og:description" content="Grafos de ataque en tiempo real · OSINT · dashboard SOC." />
+  <meta property="og:description" content="Grafos de ataque en tiempo real · Analizador de amenazas URL · OSINT · dashboard SOC." />
   <meta property="og:image" content="assets/soc-dashboard.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -30,7 +30,7 @@
     <div class="container hero-inner">
       <span class="badge">🛡 Plataforma defensiva · uso autorizado</span>
       <h1>Conoce tu <span class="grad">superficie de ataque</span> antes que un atacante</h1>
-      <p class="lead">Grafos de ataque en tiempo real, inteligencia OSINT y un dashboard estilo SOC que convierte hallazgos dispersos en rutas priorizadas por riesgo.</p>
+      <p class="lead">Grafos de ataque en tiempo real, análisis de URLs phishing, inteligencia OSINT y un dashboard estilo SOC que convierte hallazgos dispersos en rutas priorizadas por riesgo.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="#preview">Ver el producto</a>
         <a class="btn btn-ghost" href="#features">Funcionalidades</a>
@@ -43,12 +43,12 @@
   <section class="section" id="problem">
     <div class="container">
       <h2 class="section-title">El problema que resuelve</h2>
-      <p class="section-sub">Los hallazgos de seguridad llegan dispersos y sin contexto. AegisSOC los unifica en un grafo de ataque con rutas y riesgo, en tiempo real.</p>
+      <p class="section-sub">Los hallazgos de seguridad llegan dispersos y sin contexto. AegisSOC los unifica en un grafo de ataque con rutas y riesgo, en tiempo real. Detecta phishing y typosquatting antes de que el daño ocurra.</p>
       <div class="cards">
         <div class="card"><div class="card-ico">🔴</div><h3>Grafo de ataque</h3><p>Rutas y riesgo por nodo, visualización interactiva en vivo.</p></div>
+        <div class="card"><div class="card-ico">🔍</div><h3>Análisis de URLs</h3><p>10 etapas: phishing, typosquatting, TLS, redirecciones, IOCs.</p></div>
         <div class="card"><div class="card-ico">🌐</div><h3>OSINT integrado</h3><p>Descubrimiento de superficie expuesta desde fuentes públicas.</p></div>
-        <div class="card"><div class="card-ico">📡</div><h3>Tiempo real</h3><p>Hallazgos en vivo con severidad codificada por color.</p></div>
-        <div class="card"><div class="card-ico">🎯</div><h3>MITRE ATT&CK</h3><p>Tácticas mapeadas para priorizar y comunicar.</p></div>
+        <div class="card"><div class="card-ico">🎯</div><h3>MITRE ATT&CK</h3><p>Tácticas mapeadas automáticamente para priorizar y comunicar.</p></div>
       </div>
     </div>
   </section>
@@ -57,17 +57,39 @@
     <div class="container">
       <h2 class="section-title">Funcionalidades de alto nivel</h2>
       <div class="feat-grid">
-        <div class="feat"><span>🔴</span><h3>Grafo de ataque en tiempo real</h3><p>Hosts, servicios, vulnerabilidades y relaciones, con rutas y puntuación de riesgo.</p></div>
-        <div class="feat"><span>🌐</span><h3>Inteligencia OSINT</h3><p>Superficie expuesta: correos, infraestructura y certificados.</p></div>
-        <div class="feat"><span>🔎</span><h3>Comprobaciones defensivas</h3><p>Familias de comprobaciones observacionales. Sin payloads.</p></div>
-        <div class="feat"><span>🖥</span><h3>Dashboard SOC</h3><p>Riesgo, severidad, histórico de escaneos y alertas.</p></div>
-        <div class="feat"><span>🗺</span><h3>Mapa de infraestructura</h3><p>Activos expuestos por geolocalización y cadenas de certificados.</p></div>
-        <div class="feat"><span>🔐</span><h3>Control de acceso por rol</h3><p>Administración, auditoría y solo lectura.</p></div>
+        <div class="feat"><span>🔴</span><h3>Grafo de ataque en tiempo real</h3><p>Hosts, servicios, vulnerabilidades y relaciones, con rutas y puntuación de riesgo. Motor propio sin dependencias externas.</p></div>
+        <div class="feat"><span>🔍</span><h3>Analizador de amenazas URL</h3><p>Pipeline de 10 etapas: normalización, WHOIS, typosquatting Levenshtein+homógrafo, TLS DER, cadena de redirecciones, HTML, JS, MITRE, puntuación de riesgo 0–100 e IOCs.</p></div>
+        <div class="feat"><span>🌐</span><h3>Inteligencia OSINT</h3><p>Superficie expuesta: correos, empleados, infraestructura y certificados. Sin clave API para el analizador de URLs.</p></div>
+        <div class="feat"><span>🔎</span><h3>Comprobaciones defensivas</h3><p>11 módulos observacionales: headers, SSL, CORS, CSP, secretos, DNS, puertos, fingerprint, cookies, Hunter.io, Censys.</p></div>
+        <div class="feat"><span>🖥</span><h3>Dashboard SOC</h3><p>Riesgo, severidad, histórico de escaneos, widgets OSINT y mapa de infraestructura mundial.</p></div>
+        <div class="feat"><span>🔐</span><h3>Control de acceso por rol</h3><p>Tres roles JWT: administrador, auditor y solo lectura. Claves OSINT cifradas en disco (Fernet + PBKDF2).</p></div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="preview">
+  <section class="section" id="threat-analyzer">
+    <div class="container narrow">
+      <h2 class="section-title">🔍 Analizador de amenazas URL</h2>
+      <p class="section-sub">Motor propietario de 10 etapas para detectar phishing, typosquatting y URLs maliciosas. No requiere claves de API externas.</p>
+      <table class="threat-table">
+        <thead><tr><th>Etapa</th><th>Qué analiza</th></tr></thead>
+        <tbody>
+          <tr><td><strong>1. Normalizar</strong></td><td>Flags estructurales de URL (credenciales, data URIs, parámetros ofuscados)</td></tr>
+          <tr><td><strong>2. Inteligencia de dominio</strong></td><td>WHOIS, DNS, IP, ASN vía Team Cymru</td></tr>
+          <tr><td><strong>3. Typosquatting</strong></td><td>Levenshtein + homógrafo/confusable vs 40+ marcas principales</td></tr>
+          <tr><td><strong>4. TLS</strong></td><td>Validez del certificado, emisor, SANs, edad (parse DER real)</td></tr>
+          <tr><td><strong>5. Cadena de redirecciones</strong></td><td>Seguimiento salto a salto con protección SSRF en cada hop</td></tr>
+          <tr><td><strong>6. Contenido HTML</strong></td><td>Formularios de contraseña, iframes ocultos, meta-refresh</td></tr>
+          <tr><td><strong>7. Análisis JS</strong></td><td>eval/atob/Function constructor, ofuscación, extracción de IOCs</td></tr>
+          <tr><td><strong>8. Mapa ATT&amp;CK</strong></td><td>10 técnicas MITRE: T1566, T1204, T1583, T1584, T1556, T1111, T1027, T1036, T1656, T1059</td></tr>
+          <tr><td><strong>9. Motor de riesgo</strong></td><td>Puntuación ponderada 0–100 → Seguro / Bajo / Sospechoso / Alto / Malicioso</td></tr>
+          <tr><td><strong>10. Extracción de IOCs</strong></td><td>IPs, dominios, correos, hashes — integrados en el grafo de ataque en vivo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section alt" id="preview">
     <div class="container">
       <h2 class="section-title">Vista del producto</h2>
       <p class="section-sub">Maquetas representativas · sin datos reales.</p>
@@ -78,42 +100,46 @@
     </div>
   </section>
 
-  <section class="section alt" id="usecases">
+  <section class="section" id="usecases">
     <div class="container">
       <h2 class="section-title">Casos de uso</h2>
       <div class="cards">
-        <div class="card"><h3>Equipo azul</h3><p>Monitorización continua de la superficie de ataque propia.</p></div>
-        <div class="card"><h3>Auditoría autorizada</h3><p>Evaluación observacional de activos con permiso por escrito.</p></div>
-        <div class="card"><h3>Formación</h3><p>Entorno seguro para entender grafos de ataque y OSINT.</p></div>
-        <div class="card"><h3>Gestión de exposición</h3><p>Descubrir y priorizar activos expuestos.</p></div>
+        <div class="card"><h3>Equipo azul</h3><p>Monitorización continua de la superficie de ataque propia con escaneos programados y alertas en tiempo real.</p></div>
+        <div class="card"><h3>Análisis de phishing</h3><p>Evaluar URLs sospechosas recibidas por correo o mensajería antes de que lleguen a los usuarios.</p></div>
+        <div class="card"><h3>Auditoría autorizada</h3><p>Evaluación observacional de activos con permiso por escrito. Lista de autorización configurable.</p></div>
+        <div class="card"><h3>Gestión de exposición</h3><p>Descubrir y priorizar activos expuestos públicamente con visualización geográfica.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="stack">
+  <section class="section alt" id="stack">
     <div class="container narrow">
       <h2 class="section-title">Tecnología (alto nivel)</h2>
-      <p class="section-sub">Aplicación web en tiempo real con backend de servicios, motor de escaneo extensible y visualización de grafos.</p>
-      <div class="chips"><span>Web tiempo real</span><span>API de servicios</span><span>Motor extensible</span><span>Grafo interactivo</span><span>OSINT</span><span>MITRE ATT&CK</span></div>
+      <p class="section-sub">Aplicación web en tiempo real con backend de servicios, motor de escaneo extensible, analizador de amenazas propio y visualización de grafos.</p>
+      <div class="chips">
+        <span>Web tiempo real</span><span>API de servicios</span><span>Motor extensible</span>
+        <span>Grafo interactivo</span><span>OSINT</span><span>MITRE ATT&CK</span>
+        <span>Analizador phishing</span><span>55 tests</span>
+      </div>
       <pre class="arch">Analista (SOC)
    ↓
 Dashboard web (tiempo real)
-   ↓
-API + motor de escaneo
-   ↓
-Hallazgos + grafo</pre>
+   ↓                    ↓
+Motor de escaneo    Analizador URL
+   ↓                    ↓
+Hallazgos + grafo ← IOCs + ATT&CK</pre>
       <p class="muted">El detalle de implementación, módulos de escaneo e integraciones se mantiene privado de forma intencionada.</p>
     </div>
   </section>
 
-  <section class="section alt" id="roadmap">
+  <section class="section" id="roadmap">
     <div class="container narrow">
       <h2 class="section-title">Roadmap</h2>
       <ul class="roadmap">
         <li>Feed de inteligencia de vulnerabilidades (CVE)</li>
-        <li>Análisis de hallazgos asistido por IA</li>
         <li>Generación de informes en PDF</li>
         <li>Descubrimiento de activos por rastreo web</li>
+        <li>Integración con Shodan</li>
         <li>Soporte multi-workspace</li>
       </ul>
     </div>

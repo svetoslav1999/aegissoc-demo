@@ -66,6 +66,13 @@ a{color:inherit;text-decoration:none}
 .arch{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;text-align:center;font-family:'JetBrains Mono',monospace;color:var(--ink);font-size:15px;line-height:2;margin-bottom:18px}
 .muted{color:var(--muted);font-size:14px;text-align:center}
 
+.threat-table{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:15px}
+.threat-table th{background:var(--surface);border:1px solid var(--line);padding:12px 16px;text-align:left;color:var(--green);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.threat-table td{border:1px solid var(--line);padding:12px 16px;vertical-align:top}
+.threat-table tbody tr:hover td{background:var(--surface)}
+.threat-table td:first-child{white-space:nowrap;color:var(--ink)}
+.threat-table td:last-child{color:var(--muted)}
+
 .roadmap{list-style:none;display:flex;flex-direction:column;gap:14px}
 .roadmap li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 22px;position:relative;padding-left:48px}
 .roadmap li::before{content:"";position:absolute;left:20px;top:50%;transform:translateY(-50%);width:10px;height:10px;border-radius:50%;background:var(--green)}
